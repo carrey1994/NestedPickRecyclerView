@@ -19,7 +19,7 @@ class TypeAdapter(val typeBeans: TypeBeans) : RecyclerView.Adapter<TypeAdapter.T
 	override fun getItemCount(): Int = typeBeans.size
 	
 	override fun onBindViewHolder(holder: TypeViewHolder, position: Int) {
-		holder.tvType.text = typeBeans[position].type
+		holder.tvType.text = typeBeans[position].type.name
 		holder.tvType.isSelected = typeBeans[position].isCheck
 		holder.tvType.setOnClickListener {
 			typeSelect.onType(position)

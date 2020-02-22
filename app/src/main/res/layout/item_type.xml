@@ -4,13 +4,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!--
+      The item view is in the nested recyclerview.
+      Use the relative layout as parent layout,
+      or the gridlayoutmanger can't handle it.
+    -->
+
     <TextView
         android:id="@+id/tv_type"
         android:background="@drawable/selector_type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="2dp"
-        android:textColor="#FBD265"
+        android:textColor="#FFCE40"
+        android:textStyle="bold"
         android:gravity="center"
         android:textSize="14dp" />
 
